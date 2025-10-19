@@ -47,27 +47,19 @@
 
         <!-- Nav Links (desktop) -->
         <div class="hidden sm:flex sm:space-x-6 items-center">
-          <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-l font-medium">
-            <router-link to="/">Home</router-link>
-          </a>
-          <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-l font-medium">
-            <router-link to="/about">About</router-link>
-          </a>
-          <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-l font-medium">
-            <router-link to="/research">Research</router-link>
-          </a>
-          <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-l font-medium">
-            <router-link to="/publications">Publications</router-link>
-          </a>
-          <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-l font-medium">
-            <router-link to="/outreach">Outreach</router-link>
-          </a>
-          <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-l font-medium">
-            <router-link to="/group">Group</router-link>
-          </a>
-          <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-l font-medium">
-            <router-link to="/science-ed">Science Ed</router-link>
-          </a>
+          <router-link
+            v-for="item in navItems"
+            :key="item.to"
+            :to="item.to"
+            :class="[
+              'px-3 py-2 rounded-md text-l font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400',
+              $route.path === item.to
+                ? 'bg-gray-700'
+                : ''
+            ]"
+          >
+            {{ item.label }}
+          </router-link>
         </div>
       </div>
     </div>
@@ -75,13 +67,17 @@
     <!-- Mobile menu -->
     <div v-if="isOpen" class="sm:hidden" id="mobile-menu">
       <div class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800">
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">Home</a>
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">About</a>
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">Research</a>
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">Publications</a>
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">Projects</a>
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">Blog</a>
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">Contact</a>
+        <router-link
+          v-for="item in navItems"
+          :key="item.to"
+          :to="item.to"
+          :class="[
+            'block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-200',
+          ]"
+          @click="isOpen = false"
+        >
+          {{ item.label }}
+        </router-link>
       </div>
     </div>
   </nav>
@@ -90,4 +86,17 @@
 <script setup>
 import { ref } from 'vue';
 const isOpen = ref(false);
+
+import { useRoute } from 'vue-router';
+const $route = useRoute();
+
+const navItems = [
+  { to: '/', label: 'Home' },
+  { to: '/about', label: 'About' },
+  { to: '/research', label: 'Research' },
+  { to: '/publications', label: 'Publications' },
+  { to: '/outreach', label: 'Outreach' },
+  { to: '/group', label: 'Group' },
+  { to: '/science-ed', label: 'Science Ed' }
+];
 </script>
