@@ -42,6 +42,10 @@ const routes = [
     path: '/science-ed',
     name: 'ScienceEd',
     component: ScienceedView
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/'
   }
 ];
 

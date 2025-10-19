@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full max-w-md mx-auto bg-white p-2 sm:p-6 rounded-lg flex flex-col items-center space-y-3 ">
+  <div class="w-full max-w-md bg-white p-2 sm:p-6 rounded-lg flex flex-col items-center space-y-3 ">
     <h1 class="text-4xl font-sans font-bold tracking-tight text-black w-full">Dr. &nbsp; Aparna Deshpande</h1>
     <h2 class="text-xl font-mono font-normal text-gray-400 text-right w-full mr-5">Associate Professor<br/>IISER Pune</h2>
 
