@@ -1,0 +1,32 @@
+<template>
+  <div class="text-center mt-15 text-4xl font-bold">My Talks</div>
+  <div class="w-25 h-0.5 bg-[#111828] mx-auto rounded mt-5 mb-5"></div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 ml-1 sm:mr-10 mt-15 mb-20 gap-5 w-full">
+    <div v-for="(tile, idx) in talks" :key="idx"
+        class="max-w-full bg-white rounded-lg shadow-lg p-6 hover:shadow-lg transition-shadow duration-300 px-10 py-10 text-center flex flex-col border border-2 border-gray-200">
+      <a :href="tile.link" target="_blank" rel="noopener" class="flex flex-col flex-grow">
+        <h3 class="text-l font-semibold text-gray-900 mb-2 h-15">
+          {{ tile.title }}
+        </h3>
+        <p class="text-gray-700 text-xs mt-5 text-center">
+          {{ tile.description }}
+        </p>
+      </a>
+    </div>
+  </div>
+</template>
+
+<script setup>
+const talks = [
+  {
+    title: "The Exciting Science of 2D Materials",
+    link: "https://drive.google.com/file/d/1BHk9Et7sjb90O9z51I_Naz6exVhNA3dm/view",
+    description: "This lecture was a part of Jidnyasa Virtual Lecture Series at Praj Matrix. "
+  },
+  {
+    title: "Reaching out to atoms, molecules and surfaces using scanning tunneling microscopy",
+    link: "https://www.youtube.com/watch?v=x2zSeHxMkoE",
+    description: "This lecture was a part of the Science Gappa Series at Dr. Abasaheb Garware College Pune."
+  }
+];
+</script>
