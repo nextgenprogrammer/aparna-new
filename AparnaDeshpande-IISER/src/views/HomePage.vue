@@ -10,7 +10,7 @@
         <div>
             <div>
               <div class="grid grid-cols-1 sm:grid-cols-2">
-                  <div class="h-75 w-70 sm:h-150 sm:w-100 ml-15 sm:ml-0">
+                  <div class="h-62 w-65 sm:h-150 sm:w-100 ml-15 sm:ml-0">
                       <img class="rounded-2xl sm:h-[431px] sm:w-[420px] md:mt-15 object-contain" src="../assets/pro1.png" alt="propic"></img>
                   </div>
                   <div class="flex items-center justify-center">
