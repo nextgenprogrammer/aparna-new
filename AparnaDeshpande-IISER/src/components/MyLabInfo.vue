@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center text-bold text-4xl mt-10">My STM Laboratory</div>
+    <div class="text-center text-bold text-4xl mt-10">My STM</div>
     <div class="w-25 h-0.5 bg-[#111828] mx-auto rounded mt-2"></div>
     <div class="m-10">
       <img src="../assets/Lab.png" alt="STM Lab">
@@ -11,6 +11,7 @@
         <ul class="list-inside list-disc flex flex-col gap-4 text-justify">
             <li>Omicron STM operating in ultra high vacuum (UHV) and at low temperature (LT), 77 K and 4.2K (UHV-LT-STM) for dedicated STM, spectroscopy and atom and molecule manipulation experiments at 77 K and 4.2 K.</li>
             <li>Nanosurf atomic force microscope (AFM) and STM, table top models, for projects at room temperature (300 K) and in ambient environment</li>
+            <li>Homebuilt 2D transfer system with Olympus Upright microscope</li>
         </ul>
     </div>
 </template>

@@ -6,7 +6,6 @@
 
 <script setup>
 import MyLabInfo from '@/components/MyLabInfo.vue';
-import PastTrajectory from '@/components/PastTrajectory.vue';
 
 </script>
 

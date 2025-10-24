@@ -6,11 +6,11 @@
 
 <template class="h-screen overflow-hidden m-0 p-0">
   <div class="flex items-center justify-center min-w-full bg-transparent mt-2">
-    <div class="ml-2 mr-2">
+    <div class="ml-2 mr-2 sm:ml-12 sm:mr-12">
       <div class="grid grid-cols-1 sm:grid-cols-2">
         <div class="grid grid-cols-1 mt-10">
-          <div class="ml-15 sm:ml-8 h-62 w-65 sm:h-100 sm:w-140 sm:mt-5 flex justify-center">
-            <img class="rounded-2xl sm:h-[420px] sm:w-[420px] object-contain" src="../assets/prohome1.png" alt="propic" />
+          <div class="ml-18 sm:ml-0 h-62 w-65 sm:h-100 sm:w-140 sm:mt-5 flex justify-center">
+            <img class="rounded-2xl sm:h-[420px] sm:w-[420px] object-contain" src="../assets/profile.png" alt="propic" />
           </div>
           <div class="flex items-center justify-center">
             <ProfileInfo></ProfileInfo>

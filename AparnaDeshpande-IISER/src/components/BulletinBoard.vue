@@ -2,7 +2,7 @@
   <div class="flex flex-col md:flex-row justify-center items-start gap-8 sm:mt-12">
     <!-- Bulletin Board -->
     <div
-      class="bg-white/80 backdrop-blur-sm shadow-xl rounded-2xl border-t-4 border-blue-500 p-5 w-full"
+      class="bg-white/80 backdrop-blur-sm shadow-xl rounded-2xl border-t-4 border-[#111828] p-5 w-full"
       style="z-index:2"
     >
       <!-- Board header -->
@@ -14,7 +14,7 @@
         </h3>
       </div>
 
-      <ul class="space-y-4 gap-2 h-full">
+      <ul class="space-y-4 gap-2 sm:h-full h-50 overflow-y-scroll sm:overflow-y-hidden">
         <li class="bg-blue-50 rounded-lg shadow p-3">
           Congratulations to Vaibhav Walve for defending his PhD thesis successfully! 
         </li>
