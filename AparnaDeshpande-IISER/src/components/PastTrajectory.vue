@@ -1,8 +1,6 @@
 <template>
-    <div>
-        <div class="text-center text-bold text-2xl">Academics</div>
-        <div class="w-25 h-0.5 bg-[#111828] mx-auto rounded mt-2"></div>
-        <ol class="relative border-s border-gray-700  mt-5">                  
+    <div class="mt-10 ml-5 mr-5">
+        <ol class="relative border-s border-gray-700 mt-5">                  
             <li class="mb-5 ms-4">
                 <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time class="mb-1 text-l font-normal leading-none text-gray-400 dark:text-gray-500">Postdoctoral Research</time>

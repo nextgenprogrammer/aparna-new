@@ -1,28 +1,30 @@
 <script setup>
   import ProfileInfo from '../components/ProfileInfo.vue';
   import FootQuote from '../components/FootQuote.vue';
-
-  
+  import BulletinBoard from '@/components/BulletinBoard.vue';
 </script>
 
 <template class="h-screen overflow-hidden m-0 p-0">
-    <div class="flex items-center justify-center min-w-full bg-transparent mt-10 sm:mt-10">
-        <div>
-            <div>
-              <div class="grid grid-cols-1 sm:grid-cols-2">
-                  <div class="h-62 w-65 sm:h-150 sm:w-100 ml-15 sm:ml-0">
-                      <img class="rounded-2xl sm:h-[431px] sm:w-[420px] md:mt-15 object-contain" src="../assets/pro1.png" alt="propic"></img>
-                  </div>
-                  <div class="flex items-center justify-center">
-                      <ProfileInfo></ProfileInfo>
-                  </div>
-              </div>
-            </div>
-            <div class="sm:mt-5 my-auto">
-                <FootQuote></FootQuote>
-            </div>
+  <div class="flex items-center justify-center min-w-full bg-transparent mt-2">
+    <div class="ml-2 mr-2">
+      <div class="grid grid-cols-1 sm:grid-cols-2">
+        <div class="grid grid-cols-1 mt-10">
+          <div class="ml-15 sm:ml-8 h-62 w-65 sm:h-100 sm:w-140 sm:mt-5 flex justify-center">
+            <img class="rounded-2xl sm:h-[420px] sm:w-[420px] object-contain" src="../assets/prohome1.png" alt="propic" />
+          </div>
+          <div class="flex items-center justify-center">
+            <ProfileInfo></ProfileInfo>
+          </div>
         </div>
+        <div class="mt-10 sm:mt-2">
+          <BulletinBoard></BulletinBoard>
+        </div>
+      </div>
+      <div class="sm:mt-10 my-auto mb-10">
+        <FootQuote></FootQuote>
+      </div>
     </div>
+  </div>
 </template>
 
 <style>

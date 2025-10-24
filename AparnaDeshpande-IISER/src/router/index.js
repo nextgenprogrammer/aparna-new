@@ -5,6 +5,7 @@ import OutreachView from '@/views/OutreachView.vue';
 import PublicationsView from '@/views/PublicationsView.vue';
 import ResearchView from '@/views/ResearchView.vue';
 import ScienceedView from '@/views/ScienceedView.vue';
+import STMLabView from '@/views/STMLabView.vue';
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
@@ -14,32 +15,37 @@ const routes = [
     component: HomePage
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/About_Me',
+    name: 'About Me',
     component: AboutView
   },
   {
-    path: '/research',
-    name: 'Research',
+    path: '/STM_Lab',
+    name: 'STM_Lab',
+    component: STMLabView
+  },
+  {
+    path: '/ResearchAreas',
+    name: 'Research Areas',
     component: ResearchView
   },
   {
-    path: '/publications',
+    path: '/Publications',
     name: 'Publications',
     component: PublicationsView
   },
   {
-    path: '/outreach',
+    path: '/Outreach',
     name: 'Outreach',
     component: OutreachView
   },
   {
-    path: '/group',
-    name: 'Group',
+    path: '/ResearchGroup',
+    name: 'Research Group',
     component: GroupView
   },
   {
-    path: '/science-ed',
+    path: '/Science_Ed',
     name: 'ScienceEd',
     component: ScienceedView
   },

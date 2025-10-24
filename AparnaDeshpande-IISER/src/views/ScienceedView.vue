@@ -2,11 +2,17 @@
   <div class="text-center justify-center align-center items-center">
     <div class="mt-10">
       Coordination committee member of the newly established 
-        <a href="https://www.iiserpune.ac.in/research/department/science-education/research">Department of Science Education (DSE)</a>
+        <a href="https://www.iiserpune.ac.in/research/department/science-education/research" target="_blank" rel="noopener" class="hover:shadow-lg transition text-blue-600 hover:underline">Department of Science Education (DSE)</a>
       at IISER Pune.
     </div>
     <div class="mt-5">
-        Check out the <a href="https://sciroi.net/job-portal/">Faculty Application</a> at IISER Pune.
+        To apply, please check out the <a href="https://sciroi.net/job-portal/" target="_blank" rel="noopener" class="hover:shadow-lg transition text-blue-600 hover:underline">Faculty Application</a> link.<br/><br/>
+    </div>
+    <h2 class="text-xl pb-2 text-center mt-10">My Recent Reads</h2>
+    <div class="w-25 h-0.5 bg-[#111828] mx-auto rounded mt-1 mb-10"></div>
+    <div class="sm:ml-20 sm:mr-20">
+      <a href="https://blpress.org/books/a-mathematicians-lament/" target="_blank" rel="noopener" class="hover:shadow-lg transition text-blue-600 hover:underline">"A Mathematician's Lament"</a> by Paul Lockhart.
+      With AI fiercely intruding teaching-learning spaces this book makes us truly introspect...even more than before..
     </div>
     <div class="tweet-container mt-5 flex justify-center align-center">
       <div class="twitter-tweet twitter-tweet-rendered" style="display: flex; max-width: 550px; width: 100%; margin-top: 10px; margin-bottom: 10px;">
@@ -23,7 +29,6 @@
           style="position: static; visibility: visible; width: 550px; height: 775px; display: block; flex-grow: 1;"
         ></iframe>
       </div>
-
     </div>
   </div>
   

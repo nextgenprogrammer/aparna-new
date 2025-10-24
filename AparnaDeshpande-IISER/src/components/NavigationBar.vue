@@ -92,11 +92,12 @@ const $route = useRoute();
 
 const navItems = [
   { to: '/', label: 'Home' },
-  { to: '/about', label: 'About' },
-  { to: '/research', label: 'Research' },
-  { to: '/publications', label: 'Publications' },
-  { to: '/outreach', label: 'Outreach' },
-  { to: '/group', label: 'Group' },
-  { to: '/science-ed', label: 'Science Ed' }
+  { to: '/About_Me', label: 'About Me' },
+  { to: '/STM_Lab', label: 'STM Lab' },
+  { to: '/ResearchAreas', label: 'Research Areas' },
+  { to: '/ResearchGroup', label: 'Research Group' },
+  { to: '/Publications', label: 'Publications' },
+  { to: '/Outreach', label: 'Outreach' },
+  { to: '/Science_Ed', label: 'Science Ed' }
 ];
 </script>

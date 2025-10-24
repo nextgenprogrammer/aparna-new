@@ -1,5 +1,5 @@
 <script setup>
-import HomePage from './views/HomePage.vue';
+import HomePage from './components/BulletinBoard.vue';
 import NavigationBar from './components/NavigationBar.vue';
 
 </script>
