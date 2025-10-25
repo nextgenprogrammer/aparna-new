@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center text-bold text-4xl mt-10">My STM</div>
+    <div class="text-center text-bold text-4xl mt-10">UHV-LT-STM</div>
     <div class="w-25 h-0.5 bg-[#111828] mx-auto rounded mt-2"></div>
     <div class="m-10">
       <img src="../assets/Lab.png" alt="STM Lab">

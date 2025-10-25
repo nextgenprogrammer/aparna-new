@@ -28,15 +28,6 @@
         <li class="bg-blue-50 rounded-lg shadow p-3">
           Our first paper on&nbsp;<a href="https://pubs.acs.org/doi/10.1021/acs.jpcc.4c00497" target="_blank" rel="noopener" class="transition text-blue-600 hover:underline">borophene in JPCC</a>
         </li>
-        <li class="bg-blue-50 rounded-lg shadow p-3">
-          Our second paper on&nbsp;<a href="https://pubs.acs.org/doi/full/10.1021/acs.jpcc.5c00397" target="_blank" rel="noopener" class="transition text-blue-600 hover:underline">borophene in JPCC</a>
-        </li>
-        <li class="bg-blue-50 rounded-lg shadow p-3">
-          Congratulations to Umashankar for successfully defending his thesis!
-        </li>
-        <li class="bg-blue-50 rounded-lg shadow p-3">
-          Congratulations to Pranjal for defending his MS thesis!
-        </li>
       </ul>
     </div>
   </div>
