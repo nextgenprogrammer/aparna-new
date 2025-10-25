@@ -25,9 +25,6 @@
         <li class="bg-blue-50 rounded-lg shadow p-3">
           Conversation in <a href="https://www.youtube.com/watch?v=1hkg2OmUc2A&t=14s" target="_blank" rel="noopener" class="transition text-blue-600 hover:underline">Dr. Pavan's podcast Pratidhvani Humanizing Science</a>
         </li>
-        <li class="bg-blue-50 rounded-lg shadow p-3">
-          Our first paper on&nbsp;<a href="https://pubs.acs.org/doi/10.1021/acs.jpcc.4c00497" target="_blank" rel="noopener" class="transition text-blue-600 hover:underline">borophene in JPCC</a>
-        </li>
       </ul>
     </div>
   </div>
