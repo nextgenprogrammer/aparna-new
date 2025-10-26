@@ -1,13 +1,13 @@
 <template>
   <nav class="bg-white">
-    <div class="px-2 sm:px-3 lg:px-5 dark:sm:bg-[#111828]">
+    <div class="px-2 sm:px-3 lg:px-5 sm:bg-[#111828]">
       <div class="flex justify-center h-16">
         <!-- Hamburger menu button (mobile) -->
-        <div class="flex items-center sm:hidden absolute left-4 top-4 border border-3 border-blue-600">
+        <div class="flex items-center sm:hidden absolute left-4 top-4 border border-3">
           <button
             @click="isOpen = !isOpen"
             type="button"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-100"
             aria-controls="mobile-menu"
             aria-expanded="false"
           >
@@ -46,13 +46,13 @@
         </div>
 
         <!-- Nav Links (desktop) -->
-        <div class="hidden sm:flex sm:space-x-6 items-center">
+        <div class="hidden sm:flex sm:space-x-6 items-center text-white">
           <router-link
             v-for="item in navItems"
             :key="item.to"
             :to="item.to"
             :class="[
-              'px-3 py-2 rounded-md text-l font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400',
+              'px-3 py-2 rounded-md text-l font-medium text-gray-300 hover:text-blue-400',
               $route.path === item.to
                 ? 'bg-gray-700'
                 : ''
@@ -66,7 +66,7 @@
 
     <!-- Mobile menu -->
     <div v-if="isOpen" class="sm:hidden" id="mobile-menu">
-      <div class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800">
+      <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-800">
         <router-link
           v-for="item in navItems"
           :key="item.to"
